@@ -30,10 +30,11 @@ class LeNet(nn.Module):
         return x
 
 
-model = LeNet()
+if __name__ == '__main__':
+    model = LeNet()
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = model.to(device)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model = model.to(device)
 
-# 输出模型信息
-summary(model, (1, 28, 28))
+    # 输出模型信息
+    summary(model, (1, 28, 28))
