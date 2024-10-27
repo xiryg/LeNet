@@ -24,5 +24,3 @@ def load_data(batch_size, val_split=0.2):
     test_loader = DataLoader(test_set, batch_size=batch_size, shuffle=False)
 
     return train_loader, val_loader, test_loader
-
-    return train_loader, test_loader
