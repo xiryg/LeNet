@@ -5,7 +5,7 @@ from torch.utils.data import DataLoader, random_split
 def load_data(batch_size, val_split=0.2):
     transform = transforms.Compose(
         [
-            transforms.Resize((32, 32)),
+            transforms.Resize((28, 28)),
             transforms.ToTensor(),
             transforms.Normalize((0.1307,), (0.3081,)),  # MNIST 数据集的标准化
         ]
