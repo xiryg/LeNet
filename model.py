@@ -35,4 +35,5 @@ model = LeNet()
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = model.to(device)
 
+# 输出模型信息
 summary(model, (1, 28, 28))
